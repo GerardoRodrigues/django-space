@@ -126,13 +126,3 @@ Este é um projeto de estudos, mas ideias e melhorias são sempre bem-vindas! Pa
 ## 📜 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
-
----
-
-## 📬 Contato
-
-Desenvolvido por **\[Seu Nome\]**.\
-📧 Email: \[seu-email@exemplo.com\]\
-🐙 GitHub: seu-usuario
-
-**Happy coding!** 🚀
