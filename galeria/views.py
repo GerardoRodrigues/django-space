@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def hello(request):
-    return render(request, 'index.html')
+    return render(request, 'galeria/index.html')
 
-def space(request):
-    return render(request, 'space.html')
+def image(request):
+    return render(request, 'galeria/imagem.html')

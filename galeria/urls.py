@@ -1,9 +1,9 @@
 from django.urls import path
 
-from galeria.views import hello, space
+from galeria.views import hello, image
 
 
 urlpatterns = [
-    path('', hello),
-    path('space/', space)
+    path('', hello, name='home'),
+    path('imagem/', image, name='imagem')
 ]
