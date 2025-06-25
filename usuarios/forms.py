@@ -68,3 +68,22 @@ class CadastroForms(forms.Form):
             }
         )
     )
+    
+    def clean_nome_cadastro(self):
+        nome = self.cleaned_data.get('nome_cadastro')
+        if nome:
+            nome = nome.strip()
+            if ' ' in nome:
+                raise forms.ValidationError('Por favor, digite seu nome sem espaços.')
+            else:
+                return nome
+            
+    def clean_confirmar_senha(self):
+        senha = self.cleaned_data.get('senha')
+        confirmar_senha = self.cleaned_data.get('confirmar_senha')
+        
+        if senha and confirmar_senha and senha:
+            if senha != confirmar_senha:
+                raise forms.ValidationError('As senhas não são iguais!')
+            else:
+                return confirmar_senha
